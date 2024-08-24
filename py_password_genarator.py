@@ -12,9 +12,10 @@ characters1=random.choices(letters, k=nr_letters)
 characters2=random.choices(numbers, k=nr_symbols)
 characters3=random.choices(symbols, k=nr_symbols)
 characters=characters1+characters2+characters3
+print(characters)
 random.shuffle(characters)
+print(characters)
 password=''
 for item in characters:
     password+=item+""
-print(password)
-
+print(f"Your final password is: {password}")
